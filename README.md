@@ -1,0 +1,1 @@
+# pi-hole-android-private-dns-docker
