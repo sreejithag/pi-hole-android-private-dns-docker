@@ -9,25 +9,25 @@ tz="$3"
 passwd="$4"
 
 if [ -z "$domain_name" ]; then
-  echo "🛑 Provide a doamin name"
+  echo "Provide a doamin name"
   exit 1
 fi
 
 if [ -z "$email" ]; then
-  echo "🛑 Provide an email address for lets encrypt"
+  echo "Provide an email address for lets encrypt"
   exit 1
 fi
 
 
 
 if [ -z "$tz" ]; then
-  echo "🛑 Provide a timezone"
+  echo "Provide a timezone"
   exit 1
 fi
 
 
 if [ -z "$passwd" ]; then
-  echo "🛑 Provide a password"
+  echo "Provide a password"
   exit 1
 fi
 
