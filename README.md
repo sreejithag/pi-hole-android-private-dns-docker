@@ -11,6 +11,6 @@ This script will install and configure pi-hole with DNS over TLS using Docker.
 ## Requirements 
 
 1. Ubuntu / any Linux distributtion
-2. Docker and Docker compose installed with current user added to docker group (installion guide [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04) and [Docker Compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04) for ubuntu)
+2. Docker and Docker compose installed with current user added to docker group (installation guide [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04),[Docker Compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04) for ubuntu)
 
 `./setup.sh <your-domain-name> <email> <time zone> <password>`
