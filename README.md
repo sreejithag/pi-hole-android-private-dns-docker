@@ -13,9 +13,7 @@ This script will install and configure pi-hole with DNS over TLS using Docker.
 1. Ubuntu / any Linux distributtion
 2. Docker and Docker compose installed (Installation guide of [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04) and [Docker-Compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04) for ubuntu 20.04)
 3. Domain pointing to public IP address of the server
-4. Allow following TCP ports (`80,443,853,53`) and Following UDP ports (`53,67`) [refer](README.md#installation)
-
-***Note*** I dont test it on Raspberry or on other Linux distributions I have tested it with Ubuntu server 20.04.
+4. Allow following TCP ports (`80,443,853,53`) and Following UDP ports (`53,67`) [Refer Notes](README.md#notes)
 
 ## Installation
 
@@ -25,4 +23,5 @@ Script requires 4 arguments
 2. Email for letsencrypt to get an SSL certificate for the domain
 3. Time zone for the pi-hole server (Refer the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)) 
 4. Password for the pi-hole server which can be used to login to the web UI
-`./setup.sh <your-domain-name> <email> <time zone> <password>`
+
+## Notes
