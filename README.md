@@ -26,8 +26,8 @@ Script requires 4 arguments
 
 ### steps
 ```
-wget https://bit.ly/pihole-android
-bash setup.sh <your_domain> <email> <time zone> <password>
+1. wget https://bit.ly/pihole-android
+2. bash setup.sh <your_domain> <email> <time zone> <password>
 ```
 
 
