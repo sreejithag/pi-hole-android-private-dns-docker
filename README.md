@@ -24,12 +24,12 @@ Script requires 4 arguments
 3. Time zone for the pi-hole server (Refer the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)) 
 4. Password for the pi-hole server which can be used to login to the web UI
 
-### steps
+### Steps
 ```
 1. wget https://bit.ly/pihole-android
 2. bash setup.sh <your_domain> <email> <time zone> <password>
 ```
-
+**Example** `bash setup.sh pihole.yourdomain.com youremail@gmail.com Asia/Kolkata password123`
 
 
 ## Notes
