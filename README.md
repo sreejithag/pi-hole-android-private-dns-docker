@@ -8,5 +8,6 @@ From Android version 9 and above we can use private DNS but it is DNS over TLS a
 
 This script will install and configure pi-hole with DNS over TLS using Docker. 
 
+## Requirements 
 
 `./setup.sh <your-domain-name> <email> <time zone> <password>`
