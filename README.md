@@ -42,7 +42,7 @@ Modern releases of Ubuntu (17.10+) include systemd-resolved which is configured 
 3. Edit `/etc/resolv.conf` file and change Nameserver from 127.0.0.1 to known DNS like 8.8.8.8 or 1.1.1.1
 
 ### Docker Installation
-Add the current user to the docker group so that user could run docker commands without the need of sudo previlages.
+Add the current user to the docker group so that user could run docker commands without the need of sudo previlages if not able to add user to the docker group please edit the setup.sh file and add sudo before every docker-compose and docker commands.
 
 ### Disclaimer
 I have not Raspberry to test it. used Ubuntu 20.04 for testing this and have not used any other Linux distributions for the testing but the script should work fine if docker and docker-compose are installed correctly on the system.
