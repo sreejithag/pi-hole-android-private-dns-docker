@@ -46,3 +46,11 @@ Add the current user to the docker group so that the user could run docker comma
 
 ### Disclaimer
 I have not Raspberry to test it, used Ubuntu 20.04 for testing, and have not tested any other Linux distributions but the script should work fine if docker and docker-compose are installed correctly on the system.
+
+
+## 🤝 Contributing
+If you like to add anything extra or found a bug fix please raise a pull request.
+
+## 📣 Feedback
+- ⭐ This repository if this project helped you! :wink:
+- Create An [🔧 Issue](https://github.com/sreejithag/pi-hole-android-private-dns-docker/issues) if you need help / found a bug
