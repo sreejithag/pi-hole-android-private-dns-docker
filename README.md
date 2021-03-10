@@ -18,6 +18,10 @@ This script will install and configure pi-hole with DNS over TLS using Docker.
 
 ## Installation
 
-1. 
+Script requires 4 arguments 
 
+1. Domain which points to public IP address of the server 
+2. Email for letsencrypt to get an SSL certificate for the domain
+3. Time zone for the pi-hole server (Refer the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)) 
+4. Password for the pi-hole server which can be used to login to the web UI
 `./setup.sh <your-domain-name> <email> <time zone> <password>`
