@@ -35,7 +35,7 @@ Script requires 4 arguments
 ## Notes
 ### Installing on Ubuntu
 
-Modern releases of Ubuntu (17.10+) include systemd-resolved which is configured by default to implement a caching DNS stub resolver. This will prevent pi-hole from listening on port 53. if you wnat the pihole to run only on DNS over TLS please remove line number 42,43 and 44 of setup.sh file. If you need pihole to work like normal DNS server with its IP address, disable the systemd-resolved in the server by following the setps.
+Modern releases of Ubuntu (17.10+) include systemd-resolved which is configured by default to implement a caching DNS stub resolver. This will prevent pi-hole from listening on port 53. if you wnat the pihole to run only on DNS over TLS please remove line number 42,43 and 44 of setup.sh file. If you need pihole to work like normal DNS server with its IP address, disable the systemd-resolved by following the setps.
 
 1. `sudo systemctl stop systemd-resolved.service`
 2. `sudo systemctl disable systemd-resolved.service `
