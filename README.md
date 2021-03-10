@@ -44,7 +44,7 @@ Modern releases of Ubuntu (17.10+) include systemd-resolved which is configured 
 ### Docker Installation
 Add the current user to the docker group so that the user could run docker commands without the need of sudo privileges if not able to add user to the docker group please edit the setup.sh file and add sudo before every docker-compose and docker commands.
 
-### Disclaimer
+### Random notes 
 I have not Raspberry to test it, used Ubuntu 20.04 for testing, and have not tested any other Linux distributions but the script should work fine if docker and docker-compose are installed correctly on the system.
 
 
