@@ -173,7 +173,7 @@ mkdir certbot-etc
 
 echo ""
 echo "==================================================================================="
-echo "genarating dhparam you might be prompted to enter the password  " 
+echo "generating dhparam you might be prompted to enter the password  " 
 echo ""
 
 sudo openssl dhparam -out ./certbot-etc/ssl-dhparams.pem 204
@@ -216,7 +216,7 @@ echo ""
 
 echo ""
 echo "======================================================================================"
-echo "Checking if Certbot Finished genrating certificates if it get stuck here for long "
+echo "Checking if Certbot Finished generating certificates if it get stuck here for long "
 echo "Certbot might have failed. stop the script and check logs by running "
 echo "'docker logs certbot'"
 echo ""
