@@ -79,7 +79,7 @@ services:
       - ./web-root:/var/www/html
     depends_on:
       - webserver
-    command: certonly --webroot --webroot-path=/var/www/html  --email $email --agree-tos --no-eff-email -d $domain_name 
+    command: certonly --webroot --webroot-path=/var/www/html --preferred-chain=\"ISRG Root X1\" --email $email --agree-tos --no-eff-email -d $domain_name 
 
 volumes:
   etc-pihole:
@@ -176,7 +176,7 @@ echo "==========================================================================
 echo "generating dhparam you might be prompted to enter the password  " 
 echo ""
 
-sudo openssl dhparam -out ./certbot-etc/ssl-dhparams.pem 204
+sudo openssl dhparam -out ./certbot-etc/ssl-dhparams.pem 1024
 
 echo ""
 echo "Genarated dhparams `tput setaf 2` ✓ `tput setaf 7`"
@@ -260,7 +260,7 @@ COMPOSE=\"/usr/local/bin/docker-compose --no-ansi\"
 DOCKER=\"/usr/bin/docker\"
 
 cd `pwd`
-\$COMPOSE run certbot renew --dry-run && \$COMPOSE kill -s SIGHUP webserver
+\$COMPOSE run certbot renew  --force-renewal --preferred-chain=\"ISRG Root X1\" && \$COMPOSE kill -s SIGHUP webserver
 \$DOCKER system prune -af
 "> ssl_renew.sh
 
